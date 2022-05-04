@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { Switch, Route } from "react-router-dom";
 import axios from "axios";
 import { API_KEY } from "./constants";
 import Header from "./components/Header";
 import Navbar from "./components/NavBar";
+import Main from "./components/Main";
+import NewDate from "./components/NewDate";
+
+
 
 function App() {
   const [nasaData, setNasaData] = useState(null);
@@ -20,7 +25,19 @@ function App() {
   return (
     <div>
       <Navbar/>
-      {nasaData && <Header data={nasaData} />}
+
+      <Switch>
+
+        <Route path="/new-date">
+          <NewDate/>
+        </Route>
+
+        <Route path="/">
+          {nasaData && <Header data={nasaData} />}
+          {nasaData && <Main data={nasaData} />}
+        </Route>
+         
+      </Switch>
     </div>
   );
 }
