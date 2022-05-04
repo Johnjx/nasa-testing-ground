@@ -97,23 +97,40 @@ const NewDate = () => {
 
     return (
         <div>
-            <form onSubmit={openApod}>
-                <span>
-                    <label>Day:</label>
-                    <select name="day" id="day" value={formValues.day} onChange={onChange}></select>
-                </span>
-                <span>
-                        <label>Month:</label>
-                    <select name="month" id="month" value={formValues.month} onChange={onChange}></select>
-                </span>
-                <span>
-                        <label>Year:</label>
-                    <select name="year" id="year" value={formValues.year} onChange={onChange}></select>
-                </span>
-                <button>Get New Feature</button>
-            </form>
+            <div className="h-40 flex justify-center items-center bg-prim dark:bg-slate-900">
+                <form onSubmit={openApod}>
+                    <span className="date-span">
+                        <label>Day:</label>
+                        <select className="bg-prim dark:bg-gray-400 dark:text-white"
+                                             name="day" id="day"
+                                             value={formValues.day} onChange={onChange}></select>
+                    </span>
+                    <span className="date-span">
+                            <label>Month:</label>
+                        <select className="bg-prim dark:bg-gray-400 dark:text-white"
+                                             name="month" id="month"
+                                             value={formValues.month} onChange={onChange}></select>
+                    </span>
+                    <span className="date-span">
+                            <label>Year:</label>
+                        <select className="bg-prim dark:bg-gray-400 dark:text-white"
+                                             name="year" id="year"
+                                             value={formValues.year} onChange={onChange}></select>
+                    </span>
+                    <button className="bg-white border-2 border-black p-2
+                                    hover:bg-sec transition-all duration-200
+                                    dark:bg-black dark:text-white
+                                    dark:border-teal-300 dark:hover:bg-gray-400 dark:hover:text-black"
+                                    >Get New Feature</button>
+                </form>
+            </div>
+            <div>
+            {!date && (
+                <div className="h-screen w-screen bg-slate-600"></div>
+            )}   
             {date && <NewApod date={date}/>}
-       </div>
+            </div>
+        </div>
     )
 }
 

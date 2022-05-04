@@ -14,4 +14,8 @@
             transition-all cursor-pointer;
   }
 
+  .date-span {
+    @apply p-4 m-4 bg-orange-200 border-2 border-black dark:bg-sec dark:border-teal-200;
+  }
+
 }

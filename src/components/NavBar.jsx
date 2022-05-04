@@ -3,10 +3,11 @@ import { FaFire } from "react-icons/fa"
 
 const Navbar = () => {
     return (
-        <div className="h-12 bg-gray-200 dark:bg-slate-600 shadow-inner transition-all duration-300">
+        <div className="h-12 bg-gray-200 dark:bg-slate-600 dark:text-white
+                         shadow-inner transition-all duration-300">
             <nav className="flex justify-evenly">
-                <NavLink to="/"> <NavBarIcon icon={<FaFire size="30"/>} /> </NavLink>
-                <NavLink to="/new-date"> <NavBarIcon icon={<FaFire size="30"/>} /> </NavLink>
+                <NavLink to="/">HOME</NavLink>
+                <NavLink to="/new-date">NEW DATE</NavLink>
                 <NavLink to="/"> <NavBarIcon icon={<FaFire size="30"/>} /> </NavLink>
                 <NavLink to="/"> <NavBarIcon icon={<FaFire size="30"/>} /> </NavLink>
             </nav>
@@ -16,7 +17,7 @@ const Navbar = () => {
 
 const NavBarIcon = ({ icon, text="tooltip" }) => (
     <div className="navbar-icon">
-        {icon}   
+        {icon}
     </div>
 )
 
