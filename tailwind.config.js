@@ -10,7 +10,10 @@ module.exports = {
         sec: '#84F2D6',
         ter: '#FC6B3F',
         quad: '#262525',
-      }
+      },
+      fontFamily: {
+        heading: ['Orbitron', 'sans-serif'],
+      },
     },
   },
   plugins: [],
