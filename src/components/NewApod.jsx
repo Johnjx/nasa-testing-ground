@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_KEY } from "../constants";
+import AnimatedPage from "./Animations/AnimatedPage";
 
 const NewApod = (props) => {
     const { date } = props;
@@ -15,6 +16,7 @@ const NewApod = (props) => {
     },[date])
 
     return (
+        <AnimatedPage>
         <section className="dark:bg-gray-600">
             <h2 className="text-center text-2xl leading-loose dark:text-white">New Nasa Feature</h2>
             { newNasaData &&
@@ -28,6 +30,7 @@ const NewApod = (props) => {
                 </div>
             }    
         </section>
+        </AnimatedPage>
     )
 }
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NewApod from "./NewApod";
+import AnimatedPage from "./Animations/AnimatedPage";
 
 const months = ['January', 'February', 'March', 'April', 
 'May', 'June', 'July', 'August', 'September', 'October',
@@ -96,6 +97,7 @@ const NewDate = () => {
     }, [formValues.month])
 
     return (
+        <AnimatedPage>
         <div>
             <div className="h-40 flex justify-center items-center bg-prim dark:bg-slate-900">
                 <form onSubmit={openApod}>
@@ -131,6 +133,7 @@ const NewDate = () => {
             {date && <NewApod date={date}/>}
             </div>
         </div>
+        </AnimatedPage>
     )
 }
 
