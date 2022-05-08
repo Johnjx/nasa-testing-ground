@@ -115,6 +115,12 @@ const NewDate = () => {
             <div className="h-40 flex justify-center items-center bg-prim dark:bg-slate-900">
                 <form onSubmit={openApod}>
                     <span className="date-span">
+                            <label>Year:</label>
+                        <select className="bg-prim dark:bg-gray-400 dark:text-white"
+                                             name="year" id="year"
+                                             value={formValues.year} onChange={onChange}></select>
+                    </span>
+                    <span className="date-span">
                             <label>Month:</label>
                         <select className="bg-prim dark:bg-gray-400 dark:text-white"
                                              name="month" id="month"
@@ -125,12 +131,6 @@ const NewDate = () => {
                         <select className="bg-prim dark:bg-gray-400 dark:text-white"
                                              name="day" id="day"
                                              value={formValues.day} onChange={onChange}></select>
-                    </span>
-                    <span className="date-span">
-                            <label>Year:</label>
-                        <select className="bg-prim dark:bg-gray-400 dark:text-white"
-                                             name="year" id="year"
-                                             value={formValues.year} onChange={onChange}></select>
                     </span>
                     <button className="bg-white border-2 border-black p-2
                                     hover:bg-sec transition-all duration-200
