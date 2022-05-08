@@ -7,7 +7,7 @@ This will be a work in progress while I'm in school.
 ### Demo
 ### Tech
 HTML, CSS, JS.
-React, (React Router, Icons ), Tailwind CSS, Axios
+React⚛, (React Router🔀, Icons❎ ), Tailwind CSS💨, Axios📲, Framer Motion🎬
 ### Roadmap
 I would like to include other sections of Nasa's API page, and improve styling, structure, and overall functionality. 
 ### Interaction
