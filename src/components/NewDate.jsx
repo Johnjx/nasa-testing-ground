@@ -53,7 +53,7 @@ const NewDate = () => {
     useEffect(() => {
         const populateYears = () => {
             let year = new Date().getFullYear();
-            for (let i = 0; i < 51; i++) {
+            for (let i = 0; i < 28; i++) {
                 const option = document.createElement('option');
                 option.textContent = year - i;
                 option.value = `${year-i}`
