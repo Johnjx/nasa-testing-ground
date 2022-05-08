@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import NewApod from "./NewApod";
 import AnimatedPage from "./Animations/AnimatedPage";
 
+const className = 'dark'
+const bodyClass = window.document.body.classList;
+
+const togg = () => {
+    bodyClass.toggle(className)
+}
+
 const months = ['January', 'February', 'March', 'April', 
 'May', 'June', 'July', 'August', 'September', 'October',
 'November', 'December'];
@@ -126,9 +133,12 @@ const NewDate = () => {
                                     >Get New Feature</button>
                 </form>
             </div>
+            <div className="bg-prim dark:bg-slate-900 dark:text-white flex justify-center">
+            <button className="p-4" onClick={togg}>Dark/🌓/Light</button>
+            </div>
             <div>
             {!date && (
-                <div className="h-screen w-screen bg-slate-600"></div>
+                <div className="h-screen w-screen bg-white dark:bg-slate-600"></div>
             )}   
             {date && <NewApod date={date}/>}
             </div>
