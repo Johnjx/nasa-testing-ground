@@ -73,12 +73,14 @@ const NewDate = () => {
     useEffect(() => {
         const populateDays = (month) => {
 
+            const yearSelect = document.getElementById("year");
             const daySelect = document.getElementById("day");
             while(daySelect.firstChild){
                 daySelect.removeChild(daySelect.firstChild)
             }
 
             let dayNum;
+            let year = yearSelect.value;
             if(month === 'January' || month === 'March' || 
         month === 'May' || month === 'July' || month === 'August' 
         || month === 'October' || month === 'December') {
@@ -87,7 +89,11 @@ const NewDate = () => {
         || month === 'September' || month === 'November') {
             dayNum = 30;
         }else{
-            
+            if (new Date(year, 1, 29).getMonth() === 1) {
+                dayNum = 29;
+            } else {
+                dayNum = 28;
+            }
         }
     
         for (let i = 1; i <= dayNum; i++){
