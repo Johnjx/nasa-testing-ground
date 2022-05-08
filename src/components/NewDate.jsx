@@ -14,9 +14,9 @@ const months = ['January', 'February', 'March', 'April',
 'November', 'December'];
 
 const initialFormValues = {
-    day: '',
-    month: '',
-    year: '',
+    day: '1',
+    month: 'January',
+    year: '2022',
   }
 
 const NewDate = () => {
