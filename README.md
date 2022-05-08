@@ -11,7 +11,7 @@ React⚛, (React Router🔀, Icons❎ ), Tailwind CSS💨, Axios📲, Framer Mot
 ### Roadmap
 I would like to include other sections of Nasa's API page, and improve styling, structure, and overall functionality. 
 ### Interaction
-The website loads with Nasa's Astronomy Picture of the Day, and you can navigate to the 'New Date' page to fetch your own 'APOD' with a custom date starting from the year 1995, which is the year Nasa began the their stream. 
+The website loads with Nasa's Astronomy Picture of the Day, and you can navigate to the 'New Date' page to fetch your own 'APOD' with a custom date starting from the year 1995, which is the year Nasa began their stream. 
 
 ### Notes
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
