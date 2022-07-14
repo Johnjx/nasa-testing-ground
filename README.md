@@ -3,8 +3,7 @@ A website that hooks into Nasa's official API portal to display some galactic fu
 ## Origin
 This project is a revisit and refactoring of a similar project that I was working on. The difference, now, is that I have learned new skills and tools which I would like to bundle and apply to this new version. This is an on-going project that I hope to improve upon in the future. 
 ### Status
-This will be a work in progress while I'm in school.
-### Demo
+Continual improvement.
 ### Tech
 HTML, CSS, JS.
 React⚛, (React Router🔀, Icons❎ ), Tailwind CSS💨, Axios📲, Framer Motion🎬
