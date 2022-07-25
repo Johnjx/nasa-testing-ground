@@ -25,8 +25,11 @@ const NewApod = (props) => {
                     <h3 className="text-2xl p-3">{newNasaData.date}</h3>
                     <img className="w-screen max-h-screen" src={newNasaData.hdurl} alt="Nasa feature"/>
                     <h3 className="text-3xl leading-loose p-4 font-semibold">Details about this Piece</h3>
-                    <p className="max-w-5xl text-xl leading-relaxed">{newNasaData.explanation}</p>
+                    <p className="2xl:max-w-5xl 2xl:text-2xl text-xl leading-relaxed lg:max-w-2xl sm:max-w-md xs:text-lg xs:max-w-xs">{newNasaData.explanation}</p>
                     <p className="p-4 text-lg font-bold">{newNasaData.copyright}</p>
+                    <div className="h-12 w-screen bg-sec">
+                        <p className="text-center p-4 dark:text-black">© 2022 John Ruddock.</p>
+                    </div>
                 </div>
             }    
         </section>
