@@ -1,6 +1,5 @@
 # Nasa Testing Ground
-A website that hooks into Nasa's official API portal to display some galactic fun.
-[Website](https://rainbow-muffin-38c867.netlify.app/)
+A [website](https://rainbow-muffin-38c867.netlify.app/) that hooks into Nasa's official API portal to display some galactic fun.
 ## Origin
 This project is a revisit and refactoring of a similar project that I was working on. The difference, now, is that I have learned new skills and tools which I would like to bundle and apply to this new version.
 ### Tech
